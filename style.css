@@ -1,0 +1,171 @@
+h1, p, .summary-card__title {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14.4px;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  background: #e0e8ff url(../images/pattern-background-mobile.svg) top -40px left 0 no-repeat;
+  background-size: 100%;
+  color: #7280a7;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button, .summary-card__button {
+  background: #3829e0;
+  padding: 1.1rem;
+  border-radius: 0.7rem;
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+  display: none;
+}
+
+.page {
+  width: 375px;
+}
+
+.summary-card {
+  overflow: hidden;
+  border-radius: 1.3rem;
+  text-align: center;
+  background: white;
+  margin: 1.5rem;
+}
+
+.summary-card__img {
+  display: block;
+  width: 100%;
+}
+
+.summary-card-content {
+  padding: 2.2rem 1.7rem;
+}
+
+.summary-card__title {
+  letter-spacing: -0.07em;
+  margin-bottom: 1.1rem;
+  font-weight: 900;
+  color: #1f2f56;
+  font-size: 1.7rem;
+}
+
+.summary-card__text {
+  line-height: 1.8em;
+  padding: 0 1rem;
+  margin-bottom: 1.7rem;
+  letter-spacing: 0.02em;
+}
+
+.summary-card__order-content-container {
+  display: flex;
+  background: #f5f7ff;
+  border-radius: 0.5rem;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem;
+  text-align: left;
+  margin-bottom: 1.8rem;
+}
+.summary-card__order-content-container > * {
+  text-align: left;
+}
+
+.summary-card__order-price-container {
+  margin-right: auto;
+  margin-left: 1.3rem;
+}
+
+.summary-card__order-type {
+  font-weight: 900;
+  color: #1f2f56;
+  margin-bottom: 0.3rem;
+  text-align-last: left;
+}
+
+.summary-card__change {
+  text-align: right;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #3829e0;
+}
+.summary-card__change:hover {
+  color: #6b61ef;
+  text-decoration: none;
+}
+
+.summary-card__button {
+  display: block;
+  font-weight: 900;
+  margin-bottom: 1.8rem;
+  box-shadow: 0 1rem 1rem rgba(107, 97, 239, 0.25);
+}
+.summary-card__button:hover {
+  background: #6b61ef;
+}
+
+.summary-card__cancel {
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #7280a7;
+}
+.summary-card__cancel:hover {
+  color: #1f2f56;
+}
+
+@media screen and (min-width: 500px) {
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    background: #e0e8ff url(../images/pattern-background-desktop.svg) top -40px left 0 no-repeat;
+    background-size: 100%;
+    margin: 0;
+  }
+
+  .page {
+    width: 450px;
+  }
+
+  .summary-card-content {
+    padding: 3rem 3rem;
+  }
+
+  .summary-card__title {
+    letter-spacing: normal;
+    margin-bottom: 1.2rem;
+  }
+
+  .summary-card__text {
+    line-height: 1.6em;
+    letter-spacing: normal;
+    margin-bottom: 1.6rem;
+  }
+
+  .summary-card__order-content-container {
+    padding: 1.3rem 1.5rem;
+    margin-bottom: 2.3rem;
+  }
+
+  .summary-card__button {
+    padding: 1rem;
+    margin-bottom: 2.1rem;
+    font-size: 0.9rem;
+  }
+}
+
